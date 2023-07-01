@@ -178,7 +178,7 @@ nav a:after {
     padding: 7px 15px 7px 15px;
     background-color: var(--color-primeira);
     transition: .3s;
-    width: 120px;
+    width: 125px;
 }
 
 .escritaWelcome button a {
@@ -360,7 +360,7 @@ nav a:after {
     padding: 7px 15px 7px 15px;
     background-color: var(--color-primeira);
     transition: .3s;
-    width: 120px;
+    width: 125px;
 }
 
 .maisSobreConteudo button a {
