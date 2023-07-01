@@ -1,0 +1,82 @@
+:root {
+    --color-primeira: rgb(0, 141, 33);
+}
+
+
+.icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.menu {
+    color: var(--color-primeira);
+    display: none;
+    font-size: 30px;
+}
+
+
+.navMobile {
+    width: 18em;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    z-index: 10000;
+    display: none;
+}
+
+.navMobileConteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 15em;
+    margin: 50px auto;
+    align-items: center;
+}
+
+.navMobileConteudo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--color-primeira);
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    transition: .4s;
+}
+
+.navMobileConteudo a:hover {
+    transition: .4s;
+    border-radius: 10px;
+}
+
+
+.animaçaoAbrirMenu {
+    animation: slideAbrirMenu .3s linear forwards;
+}
+
+.animaçaoFecharMenu {
+    animation: slideFecharMenu .3s linear forwards;
+}
+
+
+@keyframes slideAbrirMenu {
+    from {
+        margin-left: -50%
+    }
+
+    to {
+        margin-left: 0px
+    }
+}
+
+
+@keyframes slideFecharMenu {
+    from {
+        margin-left: 0px
+    }
+
+    to {
+        margin-left: -50%
+    }
+}

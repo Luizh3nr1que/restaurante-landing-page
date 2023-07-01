@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@100;400;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+:root {
+    --color-primeira: rgb(0, 141, 33);
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(245, 245, 245);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    gap: 30px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.36);
+    z-index: 999;
+}
+
+header h1 {
+    font-size: 26px;
+    color: var(--color-primeira)
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a:focus:after,
+nav a:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+nav a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-primeira);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.carrinho {
+    color: var(--color-primeira);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* conteudo main */
+
+.inicioConteiner {
+    width: 100%;
+}
+
+.inicioConteudo {
+    max-width: 75em;
+    height: 800px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inicioConteudo .escritaInicio {
+    max-width: 33em;
+}
+
+.inicioConteudo .escritaInicio h1 {
+    color: rgb(32, 32, 32);
+}
+
+.inicioConteudo .escritaInicio button {
+    margin-top: 30px;
+    border: none;
+    padding: 7px 15px 7px 15px;
+    background-color: var(--color-primeira);
+    transition: .3s;
+    width: 120px;
+}
+
+.inicioConteudo .escritaInicio button a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+.inicioConteudo .escritaInicio button:hover {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.inicioConteudo .img img {
+    width: 37em;
+}
+
+
+/* main 2 parte */
+
+.mainWelcomeContainer {
+    width: 100%;
+}
+
+.mainWelcomeContainer h2 {
+    text-align: center;
+    color: orange;
+    font-size: 2.5rem;
+}
+
+.mainwelcomeConteudo {
+    max-width: 75em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imgWelcome img {
+    width: 30em;
+}
+
+.escritaWelcome {
+    max-width: 25em;
+}
+
+.escritaWelcome button {
+    margin-top: 30px;
+    border: none;
+    padding: 7px 15px 7px 15px;
+    background-color: var(--color-primeira);
+    transition: .3s;
+    width: 120px;
+}
+
+.escritaWelcome button a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+.escritaWelcome button:hover {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+/* main menu conteudo */
+.menuContainer {
+    width: 100%;
+    margin-top: 130px;
+    background-color: rgb(218, 218, 218);
+}
+
+.menuContainer h2 {
+    text-align: center;
+    color: orange;
+    font-size: 2.5rem;
+}
+
+
+.menuConteudo {
+    max-width: 75em;
+    margin: 130px auto;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.cards {
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.cards h1 {
+    color: orange;
+    font-family: 'Dancing Script', cursive;
+}
+
+.star {
+    font-size: 24px;
+    color: gold;
+}
+
+.cards img {
+    width: 180px;
+}
+
+.opcoesEscondida {
+    position: absolute;
+    top: 10em;
+    display: none;
+}
+
+.opcoesEscondida .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.opcoesEscondida .icons button {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.cards:hover {
+    background-color: rgba(232, 232, 232, 0.697);
+}
+
+.cards:hover .opcoesEscondida {
+    display: block;
+}
+
+/* main serviços */
+.servicosContainer {
+    width: 100%;
+    margin-top: 160px;
+    background-color: rgb(218, 218, 218);
+}
+
+.servicosContainer h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+}
+
+.servicosConteudo {
+    max-width: 75em;
+    margin: 50px auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cardsServicos {
+    width: 23em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(166, 166, 166);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.cardsServicos h1 {
+    color: var(--color-primeira);
+}
+
+
+/* mains mais sobre */
+
+.maisSobreContainer {
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+
+.maisSobreConteudo {
+    max-width: 75em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.maisSobreEscrita {
+    max-width: 25em;
+}
+
+.maisSobreConteudo button {
+    margin-top: 30px;
+    border: none;
+    padding: 7px 15px 7px 15px;
+    background-color: var(--color-primeira);
+    transition: .3s;
+    width: 120px;
+}
+
+.maisSobreConteudo button a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+.maisSobreConteudo button:hover {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+
+.maisSobreImg img {
+    width: 30em;
+}
+
+/* news conteudo */
+
+.newsContainer {
+    width: 100%;
+    margin-top: 160px;
+}
+
+.newsContainer h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+}
+
+.newsConteudo {
+    max-width: 75em;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.newsCard {
+    width: 24em;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.cursivo {
+    font-size: 25px;
+    color: orange;
+    font-family: 'Dancing Script', cursive;
+}
