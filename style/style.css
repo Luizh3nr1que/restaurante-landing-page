@@ -30,6 +30,7 @@ html {
     top: 62px;
     left: 0;
     z-index: 1300;
+    transition: .3s;
 }
 
 header {
