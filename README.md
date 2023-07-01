@@ -1,6 +1,6 @@
 # restaurante
 
-<b>Este é uma Landing Page de uma pagina de restaurante, que foi desenvolvida pra eu testar umas animações novas e ele e totalmente responsividade. A página é criada com foco na experiência do usuário, utilizando animações sutis para tornar a navegação mais atraente e agradável.<b>
+<b>Este é uma Landing Page de uma pagina de restaurante, que foi desenvolvida pra eu testar umas animações novas e ele e totalmente responsivo. A página é criada com foco na experiência do usuário, utilizando animações sutis para tornar a navegação mais atraente e agradável.<b>
 <br>
 
 <h1>Tecnologias utilizadas</h1>
