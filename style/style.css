@@ -22,6 +22,16 @@ html {
     scroll-behavior: smooth;
 }
 
+#indicador {
+    background-color: var(--color-primeira);
+    height: .30em;
+    width: 0;
+    position: fixed;
+    top: 62px;
+    left: 0;
+    z-index: 1300;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -64,7 +74,7 @@ nav a:after {
     left: 50%;
     position: absolute;
     width: 0%;
-    height: 2px;
+    height: 3px;
     background-color: var(--color-primeira);
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;

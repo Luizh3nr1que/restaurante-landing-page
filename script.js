@@ -38,3 +38,15 @@ links.forEach((link) => {
         }, 200)
     })
 })
+
+
+
+const indicador = document.getElementById('indicador');
+
+const maxHeight = document.body.scrollHeight - window.innerHeight;
+
+window.addEventListener('scroll', () => {
+    const porcentagem = (window.scrollY / maxHeight) * 100;
+
+    indicador.style.width = `${porcentagem}%`;
+})
