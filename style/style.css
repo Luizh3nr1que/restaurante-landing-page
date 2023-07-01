@@ -18,6 +18,10 @@ body {
     background-color: rgb(245, 245, 245);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -103,7 +107,7 @@ nav a:after {
     padding: 7px 15px 7px 15px;
     background-color: var(--color-primeira);
     transition: .3s;
-    width: 120px;
+    width: 125px;
 }
 
 .inicioConteudo .escritaInicio button a {

@@ -18,6 +18,19 @@
     .menu {
         display: block !important;
     }
+
+    .inicioConteudo .escritaInicio {
+        padding-left: 20px;
+    }
+
+    .escritaWelcome {
+        padding-left: 20px;
+    }
+
+    .maisSobreEscrita {
+        padding-left: 20px;
+
+    }
 }
 
 @media screen and (max-width:577px) {
