@@ -67,6 +67,7 @@
 }
 
 .carrinhoConteudo .pedidoPronto .deletarPedido {
+    margin-top: 7px;
     border: none;
     background-color: rgb(246, 65, 65);
     padding: 5px;
