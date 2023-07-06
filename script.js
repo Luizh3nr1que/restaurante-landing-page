@@ -52,7 +52,7 @@ window.addEventListener('scroll', () => {
 })
 
 
-//carruinho 
+//carrinho 
 
 const iconCarrinho = document.querySelector('.carrinho');
 const carrinhoConteudo = document.querySelector('.carrinhoContainer')
@@ -85,7 +85,14 @@ const btnAdicionar = document.querySelector('.btnAdicionar');
 const totalElement = document.querySelector('.Preco');
 let total = 0;
 
+
 btnAdicionar.addEventListener('click', (e) => {
+    const notificacaoContainer = document.querySelector('.notificacaoContainer').style.display = 'flex';
+
+    setTimeout(() => {
+        const notificacaoContainer = document.querySelector('.notificacaoContainer').style.display = 'none';
+    }, 1600)
+
     const paoSelecionado = paoSelect.options[paoSelect.selectedIndex];
     const carneSelecionado = carneSelect.options[carneSelect.selectedIndex];
     const queijoSelecionado = queijoSelect.options[queijoSelect.selectedIndex];
