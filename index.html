@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/menuMobile.css">
     <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/carrinho.css">
     <!-- fim css -->
 
     <link rel="shortcut icon" href="icon/favicon-32x32.png" type="image/x-icon">
@@ -37,12 +38,37 @@
             <a href="#menu">Menu</a>
             <a href="#outros">Outros items</a>
             <a href="#noticias">Notícias</a>
+            <a href="#pedir">Pedir</a>
         </nav>
 
         <div class="icons">
             <ion-icon class="menu" name="menu"></ion-icon>
             <ion-icon class="carrinho" name="cart"></ion-icon>
         </div>
+
+        <section class="carrinhoContainer">
+            <div class="carrinhoConteudo">
+                <span>Pedido</span>
+
+                <div class="pedidoPronto">
+                    <div class="pao"></div>
+                    <div class="carne"></div>
+                    <div class="queijo"></div>
+                    <div class="molho"></div>
+                    <div class="vegetais"></div>
+
+                    <section class="deletarBtn">
+                        <button onclick="deletarPedidio()" type="button" class="deletarPedido">Deletar Pedido</button>
+                        <p onclick="deletarPedidio()" class="botaoDeletar">X</p>
+                    </section>
+                </div>
+
+                <div class="preco-btn">
+                    <span class="Preco"></span>
+                    <button class="btnPagar">Pagar Agora</button>
+                </div>
+            </div>
+        </section>
 
         <div id="indicador"></div>
 
@@ -56,10 +82,15 @@
             <a class="links" href="#menu">Menu</a>
             <a class="links" href="#outros">Outros items</a>
             <a class="links" href="#noticias">Notícias</a>
+            <a href="#pedir">Pedir</a>
         </div>
 
 
     </section>
+
+
+
+
 
     <div id="home"></div>
 
@@ -274,6 +305,74 @@
 
                 <span class="cursivo">Ethan Johnson</span>
             </div>
+
+        </div>
+
+    </section>
+
+    <div id="pedir"></div>
+
+    <section class="montarContainer">
+        <h2>Pedir agora</h2>
+
+        <div class="montarConteudo">
+
+            <h1>Monte seu Hambúrguer</h1>
+
+            <form>
+                <label for="pao">Escolha o pão:</label>
+                <select id="pao" name="pao">
+                    <option value="2.50">Pão tradicional</option>
+                    <option value="3.00">Pão integral</option>
+                    <option value="3.50">Pão de brioche</option>
+                    <option value="3.00">Pão sem glúten</option>
+                </select>
+
+                <br><br>
+
+                <label for="carne">Escolha o tipo de carne:</label>
+                <select id="carne" name="carne">
+                    <option value="4.50">Carne bovina</option>
+                    <option value="4.00">Carne de frango </option>
+                    <option value="4.50">Carne suína</option>
+                    <option value="5.00">Carne vegetariana</option>
+                </select>
+
+                <br><br>
+
+                <label for="queijo">Escolha o queijo:</label>
+                <select id="queijo" name="queijo">
+                    <option value="1.00">Queijo cheddar</option>
+                    <option value="1.50">Queijo prato</option>
+                    <option value="1.50">Queijo suíço</option>
+                    <option value="1.50">Queijo vegano</option>
+                </select>
+
+                <br><br>
+
+                <label for="molho">Escolha o molho:</label>
+                <select id="molho" name="molho">
+                    <option value="0.50">Maionese tradicional</option>
+                    <option value="0.75">Maionese picante</option>
+                    <option value="0.50">Ketchup </option>
+                    <option value="0.50">Mostarda</option>
+                    <option value="1.00">Molho barbecue</option>
+                    <option value="0.75">Molho tártaro</option>
+                    <option value="0">Não Quero molho</option>
+                </select>
+
+                <br><br>
+
+                <label for="vegetais">Escolha os vegetais e acompanhamentos:</label>
+                <select id="vegetais" name="vegetais">
+                    <option value="0.25">Alface</option>
+                    <option value="0.25">Tomate</option>
+                    <option value="0.25">Cebola</option>
+                    <option value="0">Não Quero vegetais</option>
+                </select>
+
+                <button onclick="adicionarCarrinho()" type="button" class="btnAdicionar">Adicionar Carrinho</button>
+            </form>
 
         </div>
 

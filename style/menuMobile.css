@@ -80,3 +80,14 @@
         margin-left: -50%
     }
 }
+
+
+@media screen and (max-width:373px) {
+    .navMobile {
+        width: 13em;
+    }
+
+    .navMobileConteudo a {
+        width: 50%;
+    }
+}

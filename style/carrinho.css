@@ -1,0 +1,145 @@
+.carrinhoContainer {
+    display: none;
+    width: 20em;
+    height: 23em;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    z-index: 9999;
+    border: 2px solid rgb(0, 141, 33);
+    background-color: rgb(243, 243, 243);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.abrirCarrinho {
+    animation: AbrirCarrinhoAnimation .3s linear forwards;
+}
+
+.FecharCarrinho {
+    animation: FecharCarrinhoAnimation .3s linear forwards;
+}
+
+@keyframes AbrirCarrinhoAnimation {
+    to {
+        top: 45px;
+    }
+
+    from {
+        top: 135px;
+    }
+}
+
+@keyframes FecharCarrinhoAnimation {
+    to {
+        top: 135px;
+    }
+
+    from {
+        top: 45px;
+    }
+}
+
+
+.carrinhoConteudo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.carrinhoConteudo span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.carrinhoConteudo .pedidoPronto {
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    display: none;
+}
+
+.carrinhoConteudo .pedidoPronto .deletarPedido {
+    border: none;
+    background-color: rgb(246, 65, 65);
+    padding: 5px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: .3s;
+}
+
+
+.deletarBtn {
+    position: relative;
+}
+
+.linkDeletar {
+    display: inline-block;
+}
+
+.botaoDeletar {
+    position: absolute;
+    right: 54px;
+    top: 5px;
+    font-size: 18px;
+    color: white;
+    display: none;
+    cursor: pointer;
+
+}
+
+.deletarBtn:hover .deletarPedido {
+    transition: .3s;
+    color: rgb(246, 65, 65);
+
+}
+
+.deletarBtn:hover .botaoDeletar {
+    display: block;
+}
+
+.carrinhoConteudo .pedidoPronto div {
+    margin-bottom: 5px;
+    border-bottom: 2px solid gray;
+}
+
+.preco-btn {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.Preco {
+    color: rgb(6, 206, 6);
+}
+
+.btnPagar {
+    display: none;
+    background-color: rgb(0, 141, 33);
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnPagar:hover {
+    background-color: rgb(1, 121, 29);
+
+}
