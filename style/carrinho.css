@@ -7,7 +7,8 @@
     right: 0;
     top: 45px;
     z-index: 9999;
-    border: 2px solid rgb(0, 141, 33);
+    border: 2px solid rgba(0, 141, 33, 0.491);
+    border-radius: 5px;
     background-color: rgb(243, 243, 243);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -58,6 +59,7 @@
 
 .carrinhoConteudo .pedidoPronto {
     background-color: white;
+    border-radius: 5px;
     width: 100%;
     padding: 15px;
     margin-top: 20px;
@@ -112,7 +114,7 @@
 }
 
 .carrinhoConteudo .pedidoPronto div {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     border-bottom: 2px solid gray;
 }
 
