@@ -11,6 +11,6 @@
  
 <br>
 
-<h1>Este projeto pode ser visto  <a href='https://luizh3nr1que.github.io/restaurante/'>aqui</a></h1>
+<h1>Este projeto pode ser visto  <a href='https://luizh3nr1que.github.io/restaurante-landing-page/'>aqui</a></h1>
 
 
