@@ -270,6 +270,9 @@ nav a:after {
     height: 40px;
     font-size: 25px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cards:hover {
