@@ -244,6 +244,10 @@ nav a:after {
     color: orange;
 }
 
+.coracaoPintado {
+    color: rgb(255, 84, 84);
+}
+
 .cards img {
     width: 180px;
 }

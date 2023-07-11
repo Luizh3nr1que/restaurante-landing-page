@@ -52,6 +52,21 @@ window.addEventListener('scroll', () => {
     indicador.style.width = `${porcentagem}%`;
 })
 
+//coraçao card
+
+const coracao = document.querySelectorAll('#coracao');
+
+coracao.forEach((coracao) => {
+    coracao.addEventListener('click', () => {
+        if (coracao.classList.contains('coracaoPintado')) {
+            coracao.classList.remove('coracaoPintado');
+        } else {
+            coracao.classList.add('coracaoPintado')
+        }
+    })
+})
+
+
 
 //carrinho 
 
