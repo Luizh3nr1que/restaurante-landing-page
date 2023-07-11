@@ -1,8 +1,9 @@
 const IconNavMobile = document.querySelector('.menu');
-const navMobileConteudo = document.querySelector('.navMobile');
 
 IconNavMobile.addEventListener('click', () => {
-    if (navMobileConteudo.style.display === 'none') {
+    const navMobileConteudo = document.querySelector('.navMobile');
+
+    if (!navMobileConteudo.style.display || navMobileConteudo.style.display === 'none') {
         IconNavMobile.setAttribute('name', 'close');
         navMobileConteudo.classList.remove('animaçaoFecharMenu');
         navMobileConteudo.classList.add('animaçaoAbrirMenu');
@@ -55,11 +56,12 @@ window.addEventListener('scroll', () => {
 //carrinho 
 
 const iconCarrinho = document.querySelector('.carrinho');
-const carrinhoConteudo = document.querySelector('.carrinhoContainer')
 
 
 iconCarrinho.addEventListener('click', () => {
-    if (carrinhoConteudo.style.display === 'none') {
+    const carrinhoConteudo = document.querySelector('.carrinhoContainer')
+
+    if (!carrinhoConteudo.style.display || carrinhoConteudo.style.display === 'none') {
         carrinhoConteudo.classList.remove('FecharCarrinho');
         carrinhoConteudo.classList.add('abrirCarrinho');
         carrinhoConteudo.style.display = 'block';

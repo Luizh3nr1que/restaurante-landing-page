@@ -17,10 +17,10 @@
 
 
 .navMobile {
-    width: 18em;
+    width: 13em;
     height: 100vh;
     position: fixed;
-    background-color: white;
+    background-color: rgb(244, 244, 244);
     z-index: 10000;
     display: none;
 }
@@ -28,8 +28,10 @@
 .navMobileConteudo {
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    width: 15em;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
     margin: 50px auto;
     align-items: center;
 }
@@ -39,8 +41,9 @@
     text-decoration: none;
     font-weight: bold;
     background-color: var(--color-primeira);
-    padding: 15px;
-    width: 100%;
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
     text-align: center;
     transition: .4s;
 }
@@ -78,16 +81,5 @@
 
     to {
         margin-left: -50%
-    }
-}
-
-
-@media screen and (max-width:373px) {
-    .navMobile {
-        width: 13em;
-    }
-
-    .navMobileConteudo a {
-        width: 50%;
     }
 }
