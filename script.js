@@ -28,6 +28,7 @@ img.forEach((img) => {
 
 
 const links = document.querySelectorAll('.links');
+const navMobileConteudo = document.querySelector('.navMobile');
 
 links.forEach((link) => {
     link.addEventListener('click', () => {

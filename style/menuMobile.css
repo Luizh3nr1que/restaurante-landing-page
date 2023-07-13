@@ -17,7 +17,7 @@
 
 
 .navMobile {
-    width: 13em;
+    width: 16em;
     height: 100vh;
     position: fixed;
     background-color: rgb(244, 244, 244);
@@ -42,7 +42,7 @@
     font-weight: bold;
     background-color: var(--color-primeira);
     padding: 10px;
-    width: 150px;
+    width: 80%;
     border-radius: 10px;
     text-align: center;
     transition: .4s;
