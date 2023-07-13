@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@100;400;500&display=swap');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --color-primeira: rgb(0, 141, 33);
+}
+
+.voltar-inicio {
+    position: absolute;
+    top: -35px;
+    border: none;
+    background-color: transparent;
+}
+
+.voltar-inicio a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-primeira);
+}
+
+.container {
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    height: 600px;
+    max-width: 750px;
+    position: relative;
+}
+
+.barraPedido {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    position: relative;
+    padding: 0 0 0 60px;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.barraPagamento {
+    position: absolute;
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    width: 45%;
+    height: 5px;
+    transition: .4s;
+    background-color: var(--color-primeira);
+}
+
+.button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    padding: 7px 18px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid var(--color-primeira);
+    color: var(--color-primeira);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.button:hover {
+    color: white;
+    background-color: var(--color-primeira);
+}
+
+
+.entrega {
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+    position: relative;
+    padding: 0px 30px;
+}
+
+.entrega form {
+    display: flex;
+    flex-direction: column;
+}
+
+.entrega form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.entrega form input {
+    height: 30px;
+    outline: none;
+    padding: 3px 0px 3px 5px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 50px;
+}
+
+.voltar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primeira);
+    padding: 7px 18px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+
+.pagamento {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    margin: 50px auto;
+    justify-content: space-around;
+}
+
+select {
+    border: 1px solid gray;
+    padding: 4px 10px;
+    outline: none;
+    background-color: transparent;
+}
+
+.lembretePagamento {
+    position: absolute;
+    font-weight: bold;
+    top: -45px;
+    left: 10px;
+    font-size: 13px;
+}
+
+.cartao form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartao input {
+    outline: none;
+    height: 35px;
+    padding: 3px 10px;
+}
+
+.cartao img {
+    width: 170px;
+    opacity: .9;
+}
+
+#formasPagamento {
+    margin-bottom: 15px;
+}
+
+.valorTotal {
+    position: relative;
+    background-color: rgb(230, 230, 230);
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    position: absolute;
+    bottom: -70px;
+}
+
+.valorCompra {
+    font-weight: bold;
+}
+
+.pix {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pix img {
+    width: 150px;
+}
+
+.dadosPix {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pagatBtn {
+    width: 100%;
+    margin-top: 10px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    background-color: var(--color-primeira);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+
+.voltarDados {
+    position: absolute;
+    bottom: -68px;
+    right: 30px;
+    background-color: var(--color-primeira);
+    padding: 7px 18px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.erro {
+    position: absolute;
+    display: none;
+    top: -230em;
+    right: 17em;
+    background-color: rgb(255, 101, 101);
+    color: white;
+    padding: 5px 20px;
+    font-weight: bold;
+    z-index: -1;
+    border-radius: 5px;
+    animation: slideErro .4s linear forwards;
+}
+
+@keyframes slideErro {
+    from {
+        top: 10px;
+        z-index: -1;
+    }
+
+    to {
+        top: -40px;
+        z-index: 1;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .barraPedido {
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width:431px) {
+    .valorTotal {
+        left: 0;
+    }
+
+    .datas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .pix {
+        flex-direction: column;
+        text-align: center;
+    }
+}

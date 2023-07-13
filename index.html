@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style/menuMobile.css">
     <link rel="stylesheet" href="style/responsive.css">
     <link rel="stylesheet" href="style/carrinho.css">
+    <link rel="stylesheet" href="style/stylePagamento.css">
     <!-- fim css -->
 
     <link rel="shortcut icon" href="icon/favicon-32x32.png" type="image/x-icon">
@@ -49,6 +50,7 @@
         <section class="carrinhoContainer">
             <div class="carrinhoConteudo">
                 <span>Pedido</span>
+                <p class="lembrete">(a cada quantidade que por atualizar clicando em "adicionar Carrinho")</p>
 
                 <div class="pedidoPronto">
                     <div class="pao"></div>
@@ -58,14 +60,17 @@
                     <div class="vegetais"></div>
 
                     <section class="deletarBtn">
+                        <div class="buttonAdd"> <button class="decrementoBotao">-</button><span class="numero">1</span>
+                            <button class="incrementoBotao">+</button>
+                        </div>
+
                         <button onclick="deletarPedidio()" type="button" class="deletarPedido">Deletar Pedido</button>
-                        <p onclick="deletarPedidio()" class="botaoDeletar">X</p>
                     </section>
                 </div>
 
                 <div class="preco-btn">
                     <span class="Preco"></span>
-                    <button class="btnPagar">Pagar Agora</button>
+                    <button class="btnPagar"><a href="./pages/pagamento-page/index.html">Pagar Agora</a></button>
                 </div>
             </div>
         </section>
@@ -376,12 +381,13 @@
                     <option value="0">Não Quero vegetais</option>
                 </select>
 
-                <button onclick="adicionarCarrinho()" type="button" class="btnAdicionar">Adicionar Carrinho</button>
+                <button onclick="adicionarPedidoCarrinho()" type="button" class="btnAdicionar">Adicionar
+                    Carrinho</button>
             </form>
 
         </div>
 
-    </section>
+    </section><br>
 
 
     <script src="script.js"></script>

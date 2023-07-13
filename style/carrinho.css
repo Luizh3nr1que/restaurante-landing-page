@@ -1,7 +1,7 @@
 .carrinhoContainer {
     display: none;
-    width: 20em;
-    height: 23em;
+    width: 21em;
+    height: 25em;
     padding: 20px;
     position: absolute;
     right: 0;
@@ -57,6 +57,14 @@
     font-size: 20px;
 }
 
+
+.lembrete {
+    margin: 5px;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+}
+
 .carrinhoConteudo .pedidoPronto {
     background-color: white;
     border-radius: 5px;
@@ -83,44 +91,70 @@
     transition: .3s;
 }
 
+.carrinhoConteudo .pedidoPronto .deletarPedido:hover {
+    background-color: rgb(213, 45, 45);
+}
+
 
 .deletarBtn {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttonAdd {
+    display: flex;
+    gap: 20px;
+    margin-top: 7px;
+}
+
+.decrementoBotao {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(0, 139, 33);
+    font-size: 35px;
+    font-weight: bold;
+    border: none;
+}
+
+.numero {
+    font-size: 20px;
+}
+
+.incrementoBotao {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(0, 139, 33);
+    font-size: 23px;
+    font-weight: bold;
+    border: none;
 }
 
 .linkDeletar {
     display: inline-block;
 }
 
-.botaoDeletar {
-    position: absolute;
-    right: 54px;
-    top: 11px;
-    font-size: 18px;
-    color: white;
-    display: none;
-    cursor: pointer;
-
-}
-
-.deletarBtn:hover .deletarPedido {
-    transition: .3s;
-    color: rgb(246, 65, 65);
-
-}
-
-.deletarBtn:hover .botaoDeletar {
-    display: block;
-}
 
 .carrinhoConteudo .pedidoPronto div {
     margin-bottom: 6px;
     border-bottom: 2px solid gray;
 }
 
+
 .preco-btn {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -136,7 +170,6 @@
     display: none;
     background-color: rgb(0, 141, 33);
     border: none;
-    color: white;
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
@@ -145,6 +178,11 @@
 .btnPagar:hover {
     background-color: rgb(1, 121, 29);
 
+}
+
+.btnPagar a {
+    text-decoration: none;
+    color: white;
 }
 
 .notificacaoContainer {

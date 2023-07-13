@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <link rel="stylesheet" href="stylePagamento.css">
+    <link rel="shortcut icon" href="../../icon/favicon-32x32.png" type="image/x-icon">
+
+    <!-- Biblioteca normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fim Biblioteca normalize -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>Pagamento</title>
+</head>
+
+<body>
+    <section class="container">
+        <button class="voltar-inicio"><a href="../../index.html"><ion-icon name="arrow-undo-sharp"></ion-icon> Comprar
+                novamente</a></button>
+
+        <div class="barraPedido">
+
+            <span class="progress"><ion-icon name="person-sharp"></ion-icon> Dados de entrega</span>
+            <span><ion-icon name="chevron-forward-sharp"></ion-icon></span>
+
+            <span class="progress"><ion-icon name="logo-usd"></ion-icon> Pagamento</span>
+
+            <div class="progressBar">
+                <span class="barraPagamento"></span>
+            </div>
+
+        </div>
+
+
+        <div class="erro">Preencha os dados</div>
+
+        <div class="entrega">
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" placeholder="qual seu nome?" required>
+
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" placeholder="digite seu Número" required>
+
+                <label for="endereco">Rua:</label>
+                <input type="text" id="endereco" placeholder="Rua" required>
+
+                <label for="casa">Numero da casa:</label>
+                <input type="number" id="casa" placeholder="numero da casa" required>
+
+                <label for="casa">Complemento:</label>
+                <input type="number" id="casa" placeholder="Informações adicionais (opcional)" required>
+
+                <div class="buttons">
+                    <button type="button" class="buttonAvancarPagamento button">Proximo</button>
+                </div>
+            </form>
+
+        </div>
+
+
+        <div class="pagamento" style="display: none;">
+            <span class="lembretePagamento">Pagamento expira em 24 horas</span>
+            <div class="valorTotal">
+                <span></span>
+                <span id="valor"> Valor a pagar: <span class="valorCompra">R$ 8.75</span></span>
+            </div>
+
+            <div class="dadosPagamento">
+                <select id="formasPagamento" onchange="selecionarFormaPagamento()">
+                    <option value="0" selected>Cartao de Credito</option>
+                    <option value="1">Pix</option>
+                </select>
+
+                <div class="cartao">
+                    <img src="../../img/card.png">
+                    <form>
+                        <input type="number" placeholder="Numero do Cartão" required>
+
+                        <input type="text" placeholder="Nome no Cartão" required>
+
+                        <div class="datas">
+                            <input type="number" placeholder="MM/AA" required>
+                            <input type="number" placeholder="CVV" required>
+                        </div>
+
+                        <button type="submit" class="pagatBtn">Realizar Pagamento</button>
+                    </form>
+                </div>
+
+                <div class="pix" style="display: none;">
+                    <img src="../../img/qrCode.png">
+
+                    <div class="dadosPix">
+                        <span><strong>Nome:</strong> HityFood</span>
+                        <span><strong>CNPJ:</strong> 55.555.555/0001-00</span>
+                        <span><strong>Banco:</strong> Star Bank</span>
+                        <span><strong>Agencia:</strong> 0001</span>
+                        <span><strong>Conta:</strong> 9999 9898 0101 3333</span>
+                    </div>
+                </div>
+
+                <button class="voltarDados">Voltar</button>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <script src="../../script.js"></script>
+    <script src="scriptPagamento.js"></script>
+</body>
+
+</html>
