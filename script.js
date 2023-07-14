@@ -106,7 +106,7 @@ const totalElement = document.querySelector('.Preco');
 //variavel para valor
 let total = 0;
 
-//variavel para o numero de pedido comçando em 1 pedido
+//variavel para o numero de pedido começando em 1 pedido
 let numero = 1;
 
 const decrementoBotao = document.querySelector('.decrementoBotao');

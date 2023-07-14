@@ -263,6 +263,11 @@ select {
     }
 }
 
+@media screen and (max-width:667px) {
+    .erro {
+        right: 1em;
+    }
+}
 
 @media screen and (max-width:768px) {
     .barraPedido {
@@ -286,5 +291,22 @@ select {
     .pix {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@media screen and (max-width:431px) {
+    .erro {
+        padding: 3px 10px;
+        font-size: 13px;
+    }
+
+    .voltar-inicio {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:329px) {
+    .voltar-inicio {
+        font-size: 13px;
     }
 }

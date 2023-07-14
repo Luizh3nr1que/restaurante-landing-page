@@ -10,6 +10,10 @@ avançarPagamento.addEventListener('click', (e) => {
     const erro = document.querySelector('.erro');
     const barra = document.querySelector('.barraPagamento');
 
+    setTimeout(() => {
+        erro.style.display = 'none'
+    }, 7000)
+
     if (endereco === '' || casa === '') {
         erro.style.display = 'block'
         return;
@@ -19,6 +23,8 @@ avançarPagamento.addEventListener('click', (e) => {
         pagamento.style.display = 'flex';
         barra.style.width = '100%';
     }
+
+
 
 });
 
